@@ -95,9 +95,7 @@ void cubeClass::Solve()
 {
 	int piece = 1;
 	for (int step = 1; step < 6; step++)
-	{
-		//int piecetype; //0 = edges, 1 = corners
-		//piecetype = step % 2;
+	
 		for (int face = 0; face < 6; face++)
 		{
 			bool willBreak = false;
@@ -1357,12 +1355,6 @@ std::string cubeClass::UserSolution()
 		{
 			solution.erase(index, 2);
 		}
-		/*else if (solution[index] == solution[index + 2] + 32 || solution[index] == solution[index + 2] - 32)
-		{
-			//solution.erase(index, 1);
-			//solution.erase(index + 2, 1);
-			//solution.erase(index, 2);
-		}*/
 	}
 	for (size_t index = 0; index < solution.length(); index++)
 	{

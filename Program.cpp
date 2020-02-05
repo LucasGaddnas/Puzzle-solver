@@ -52,13 +52,12 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)
 		switch (wp)
 		{
 		case INFO:
-			MessageBox(hWnd, "Rubiks cube solver v1.3\n\nBy Lucas Gäddnäs", "Info", MB_OK);
+			MessageBox(hWnd, "Rubiks cube solver v1.3\n\nBy Lucas Gï¿½ddnï¿½s", "Info", MB_OK);
 			break;
 		case SOLVE:
 			char input[50];		//decides maximum input size
 			GetWindowText(hScramble, input, 50);
 
-			//std::string scramble = input;
 			cubeClass solveCube(input);
 			if (solveCube.GetError() == 0)
 			{
