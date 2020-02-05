@@ -38,9 +38,13 @@ To get the files, simply download them or clone the to a local repository. Then 
 ## Usage
 
 Once the code is up and running it will generate the following window:
-![Image of app window](https://github.com/LucasGaddnas/Rubiks-cube-solver/tree/master/images/GUI.png)
+![Image of app window](https://raw.githubusercontent.com/LucasGaddnas/Rubiks-cube-solver/master/images/GUI.png)
 
 The upper box is for inputting the scramble and the lower box prints the solution.
 The scramble must solely consist of characters that are used for scrambles, if a character that is not recognized by the program is input an error message will be printed (this includes spaces and new lines).
 
 In the 'File' dropdown menu thera is a 'Save' and an 'Open' button. These do not yet have any functionality.
+
+## Note
+
+This is in no way a project to be thought of as a completed one. It is just a playfull project that probably will be remade in the future.
