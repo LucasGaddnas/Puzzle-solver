@@ -1,10 +1,11 @@
 #if !defined CUBECLASS_H
 #define CUBECLASS_H
+#include <iostream>
 #include <string>
 class cubeClass
 {
 public:
-	cubeClass(std::string scramble);
+	bool Scramble(std::string& scramble);
 	void Solve();
 	std::string RobotSolution(); //outputs the solution to the robot
 	std::string UserSolution(); //outputs the solution to the user

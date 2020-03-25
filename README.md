@@ -32,19 +32,4 @@ frulbd
 
 ## Download
 
-This program is built for windows use only since the (very basic) GUI is built using the Win32 API.
 To get the files, simply download or clone them to a local repository. Then use a debugger of choice to run the code.
-
-## Usage
-
-Once the code is up and running it will generate the following window:
-![Image of app window](https://raw.githubusercontent.com/LucasGaddnas/Rubiks-cube-solver/master/images/GUI.png)
-
-The upper box is for inputting the scramble and the lower box prints the solution.
-The scramble must solely consist of characters that are used for scrambles, if a character that is not recognized by the program is input an error message will be printed (this includes spaces and new lines).
-
-In the 'File' dropdown menu there is a 'Save' and an 'Open' button. These do not yet have any functionality.
-
-## Note
-
-This is not a completed project. It is just a playfull project that probably will be remade in the future.

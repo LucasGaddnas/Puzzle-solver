@@ -1,9 +1,8 @@
 #include "cubeClass.h"
-#include <iostream>
 
-cubeClass::cubeClass(std::string scramble)
+bool cubeClass::Scramble(std::string& scramble)
 {
-	for (std::string::size_type count = 0; count < scramble.length(); count++)
+	for (unsigned int count = 0; count < scramble.length(); count++)
 	{
 		switch (scramble[count])
 		{
@@ -86,20 +85,22 @@ cubeClass::cubeClass(std::string scramble)
 			break;
 		default:
 			error = 1;
+			return false;
 			break;
 		}
 	}
 	solution = "";	//resets the solution string after scramble is done
+	return true;
 }
 void cubeClass::Solve()
 {
 	int piece = 1;
-	for (int step = 1; step < 6; step++)
+	for (unsigned int step = 1; step < 6; step++)
 	
-		for (int face = 0; face < 6; face++)
+		for (unsigned int face = 0; face < 6; face++)
 		{
 			bool willBreak = false;
-			for (int currentPlace = 0; currentPlace < 8; currentPlace++)
+			for (unsigned int currentPlace = 0; currentPlace < 8; currentPlace++)
 			{
 				if (cube[face][currentPlace] == piece)
 				{
@@ -1329,7 +1330,6 @@ void cubeClass::Solve()
 			if (willBreak == true) break;	//indicates that the piece is found and breaks the search loop
 		}
 	}
-}
 std::string cubeClass::RobotSolution()
 {
 	return solution;
