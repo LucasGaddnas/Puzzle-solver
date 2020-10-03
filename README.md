@@ -29,7 +29,3 @@ and
 ```
 frulbd
 ```
-
-## Download
-
-To get the files, simply download or clone them to a local repository. Then use a debugger of choice to run the code.
